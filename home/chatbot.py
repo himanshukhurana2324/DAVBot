@@ -3,6 +3,8 @@ import nltk
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 
+nltk.download('stopwords')
+
 def read_conversation_pairs_from_csv(file_path):
     conversation_pairs = []
     with open(file_path, 'r', encoding='utf-8') as file:
@@ -20,7 +22,9 @@ def preprocess_conversation_pairs(conversation_pairs):
     stop_words = set(stopwords.words('english'))
     for question, answer in conversation_pairs:
         question_tokens = word_tokenize(question.lower())
-        answer_tokens=word_tokenize(answer)
+        answer_tokens = word_tokenize(answer.lower())
+        question_tokens = [word for word in question_tokens if word not in stop_words]
+        answer_tokens = [word for word in answer_tokens if word not in stop_words]
         preprocessed_conversation_pairs.append((question_tokens, answer_tokens))
     return preprocessed_conversation_pairs
 
