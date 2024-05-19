@@ -1,1 +1,1 @@
-web gunicorn cds.wsgi:application --log-file -
+web gunicorn Bot.wsgi:application --log-file -
