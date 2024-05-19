@@ -17,20 +17,23 @@
   <style>
     nav {
       background-color: #6c63ff;
-      color:white;
-      display:flex;
-      justify-content:space-between;
+      color: white;
+      display: flex;
+      justify-content: space-between;
       align-items: center;
     }
-    .chatlogo img{
-      height:100px;
+
+    .chatlogo img {
+      height: 100px;
     }
+
     .container {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
       padding: 20px;
     }
+
     .container {
       display: flex;
       flex-wrap: wrap;
@@ -47,6 +50,7 @@
       width: 100%;
       border-radius: 10px;
     }
+
     nav ul {
       list-style-type: none;
       margin: 0;
@@ -54,7 +58,7 @@
     }
 
     nav ul li {
-      display:inline;
+      display: inline;
       margin-right: 50px;
     }
 
@@ -62,6 +66,7 @@
       color: white;
       text-decoration: none;
     }
+
     .headText {
       background-color: #a29bfe;
       color: rgb(68, 59, 59);
@@ -70,10 +75,11 @@
     }
   </style>
 </head>
+
 <body>
   <nav>
     <div class="chatlogo">
-      <img src="static/images/chatbot.png" alt="Chatbot Logo">
+      <img src="/static/images/chatbot.png" alt="Chatbot Logo">
     </div>
     <ul>
       <li><a href="#">Home</a></li>
@@ -84,11 +90,13 @@
   <header class="headText">
     <h1>Welcome to DAV College Query Chatbot</h1>
     <br>
-    <p>Hello👋 I am an AI bot and I am here to resolve your query related to college.So you can ask me your query related to the college and
+    <p>Hello👋 I am an AI bot and I am here to resolve your query related to college.So you can ask me your query
+      related to the college and
       I try to resolve it</p>
-      <p>I am on learning If I cannot resolve your query Please <a href="https://www.davcollegeasr.org/"><b>visit website</b></a></p>
+    <p>I am on learning If I cannot resolve your query Please <a href="https://www.davcollegeasr.org/"><b>visit
+          website</b></a></p>
   </header>
-  
+
   <button class="chatbot-toggler">
     <span class="material-symbols-rounded">mode_comment</span>
     <span class="material-symbols-outlined">close</span>
@@ -124,7 +132,10 @@
     <ul class="chatbox">
       <li class="chat incoming">
         <span class="material-symbols-outlined">smart_toy</span>
-        <p> Welcome to the college chatbot!👋<br />What are the following information do you want to need <br>1.Courses:Type Courses <br> 2. Admission:Type Admission <br> 3.About College and faculty:Type MoreCollege <br> 4.Examination:Exam</p>
+        <p> Welcome to the college chatbot!👋<br />What are the following information do you want to need
+          <br>1.Courses:Type Courses <br> 2. Admission:Type Admission <br> 3.About College and faculty:Type MoreCollege
+          <br> 4.Examination:Exam
+        </p>
         </p>
         <br>
       </li>
@@ -139,4 +150,5 @@
     <source src="/static/botSound.mp3" type="audio/mpeg">
   </audio>
 </body>
+
 </html>
