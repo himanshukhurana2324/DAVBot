@@ -4,7 +4,7 @@ from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 
 nltk.download('stopwords')
-
+nltk.download('punkt')
 def read_conversation_pairs_from_csv(file_path):
     conversation_pairs = []
     with open(file_path, 'r', encoding='utf-8') as file:
